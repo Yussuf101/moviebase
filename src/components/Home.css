@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+* {
+  overflow: hidden;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  background: black;
+}
+.img-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 20%;
+  z-index: 1;
+  background-image: url(./images/collage2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100vh;
+  width: 120vw;
+  filter: brightness(0.4);
+
+  transform: perspective(800px) rotateY(-40deg);
+  overflow: visible;
+}
+
+Nav {
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  top: 5%;
+  left: 50%;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  min-height: 10vh;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.918);
+  margin: 0;
+}
+.nav-links {
+  display: flex;
+  position: sticky;
+  width: 100%;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+}
+.title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 60px;
+  letter-spacing: 10px;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 30%,
+    rgb(243, 5, 5) 50%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+li:hover,
+li:focus {
+  text-shadow: 0 0 20px black, 0 0 30px rgb(0, 0, 0);
+}
+
+.container {
+  z-index: 2;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: auto;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.733) 10%, rgb(0, 0, 0));
+  height: 40vh;
+}
