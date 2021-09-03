@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   overflow: hidden;
 }
@@ -14,17 +15,15 @@
 .img-container {
   position: absolute;
   transform: translate(-50%, -50%);
-  right: 20%;
   z-index: 1;
   background-image: url(./images/collage2.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   height: 100vh;
   width: 120vw;
   filter: brightness(0.4);
-
-  transform: perspective(800px) rotateY(-40deg);
+  transform: perspective(1000px) rotateY(-10deg);
   overflow: visible;
 }
 
@@ -36,39 +35,23 @@ Nav {
   width: 100vw;
   position: fixed;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   min-height: 10vh;
-  color: rgb(255, 255, 255);
-  font-size: 25px;
+  color: aquamarine;
+  font-size: 15px;
   font-weight: bolder;
-  background-color: rgba(0, 0, 0, 0.918);
+  background: linear-gradient(black, rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0));
   margin: 0;
 }
 .nav-links {
   display: flex;
   position: sticky;
-  width: 100%;
-  justify-content: space-around;
+  width: 90%;
+  justify-content: flex-end;
+  margin-right: 5%;
   list-style: none;
   align-items: center;
   text-align: center;
-}
-.title {
-  font-family: "Orbitron", sans-serif;
-  font-size: 60px;
-  letter-spacing: 10px;
-  background: -webkit-linear-gradient(
-    90deg,
-    rgb(0, 0, 0) 30%,
-    rgb(243, 5, 5) 50%
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-li:hover,
-li:focus {
-  text-shadow: 0 0 20px black, 0 0 30px rgb(0, 0, 0);
 }
 
 .container {
@@ -77,6 +60,74 @@ li:focus {
   display: flex;
   justify-content: space-around;
   margin-top: auto;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.733) 10%, rgb(0, 0, 0));
-  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.596) 30%, black 32%-80%);
+  height: 42vh;
+}
+.info {
+  backdrop-filter: blur(2px);
+  top: 15%;
+  z-index: 1;
+  position: absolute;
+  height: 30vh;
+  width: 50vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0 0 22px rgb(231, 163, 248);
+}
+.banner-top-sub {
+  position: relative;
+  text-transform: uppercase;
+  color: rgb(240, 168, 36);
+  font-size: 0.8em;
+  margin-bottom: -1%;
+  font-family: "Lato", sans-serif;
+}
+.banner-title {
+  position: relative;
+  font-family: "Permanent Marker", cursive;
+  text-transform: capitalize;
+  color: rgb(255, 208, 0);
+  font-size: 5rem;
+  -webkit-text-stroke: 1px rgb(255, 214, 127);
+  text-shadow: 0 0 32px rgb(240, 84, 12);
+}
+.banner-bottom-sub {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  text-shadow: 0 0 32px black;
+}
+.bottom-sub-sub {
+  color: white;
+  font-size: smaller;
+  margin-top: 10px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 20px;
+}
+.signup {
+  height: 80px;
+  width: 300px;
+
+  border: none;
+  background-color: aliceblue;
+  border-radius: 8px;
+  color: black;
+  box-shadow: 0 0 32px black;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0);
+}
+.signup:hover {
+  filter: opacity(0.8);
+}
+.signup,
+a {
+  color: black;
+}
+.footer {
+  color: whitesmoke;
 }
