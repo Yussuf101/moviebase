@@ -23,7 +23,7 @@
   height: 100vh;
   width: 120vw;
   filter: brightness(0.4);
-  transform: perspective(1000px) rotateY(-10deg);
+  transform: perspective(3000px) rotateY(20deg);
   overflow: visible;
 }
 
@@ -54,15 +54,6 @@ Nav {
   text-align: center;
 }
 
-.container {
-  z-index: 2;
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  margin-top: auto;
-  background: linear-gradient(rgba(0, 0, 0, 0.596) 30%, black 32%-80%);
-  height: 42vh;
-}
 .info {
   backdrop-filter: blur(2px);
   top: 15%;
@@ -73,15 +64,14 @@ Nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  text-shadow: 0 0 22px rgb(231, 163, 248);
 }
 .banner-top-sub {
   position: relative;
   text-transform: uppercase;
   color: rgb(240, 168, 36);
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin-bottom: -1%;
-  font-family: "Lato", sans-serif;
+  font-family: "Righteous", cursive;
 }
 .banner-title {
   position: relative;
@@ -97,7 +87,7 @@ Nav {
   color: rgb(255, 255, 255);
   font-weight: 500;
   letter-spacing: 1px;
-  font-family: "Lato", sans-serif;
+  font-family: "Righteous", cursive;
   text-shadow: 0 0 32px black;
 }
 .bottom-sub-sub {
@@ -127,7 +117,4 @@ Nav {
 .signup,
 a {
   color: black;
-}
-.footer {
-  color: whitesmoke;
 }
