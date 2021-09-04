@@ -9,7 +9,7 @@ const Nav = () => {
   return (
     <nav>
       <ul className="nav-links">
-        <Link className="logo" style={navStyle} to="/FormLogin">
+        <Link to="/FormLogin" className="logo" style={navStyle}>
           <li>LOG IN</li>
         </Link>
       </ul>

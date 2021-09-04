@@ -15,9 +15,13 @@ function Footer() {
           BUNDLE WITH ANY MOVIEBASE PLAN & SAVE Get MOVIEBASE, Disney+, and
           ESPN+.
         </div>
-        <div className="bunlde"></div>
-        <div className="bundle-button"> get the disney bundle</div>
-        <div className="bundle-terms">terms & conditions </div>
+        <div className="bunlde">
+          <div className="bundle-button"> get the disney bundle</div>
+          <div className="bundle-terms">terms & conditions </div>
+        </div>
+        <div className="hero">
+          <div className="slogun">ALL THE MOVIES YOU LOVE IN ONE PLACE</div>
+        </div>
       </div>
     </div>
   );

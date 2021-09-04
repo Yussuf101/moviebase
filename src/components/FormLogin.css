@@ -8,3 +8,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.form-content-left {
+  background: linear-gradient(220deg, rgb(184, 2, 2) 0%, rgb(101, 5, 5) 100%);
+  border-radius: 25px;
+  position: relative;
+  border-radius: 0 10px 10px 0;
+}
